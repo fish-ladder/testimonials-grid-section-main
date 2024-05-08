@@ -2,24 +2,27 @@
 
 :root {
     /* PRIMARY COLORS */
-    --clr-red: hsl(0, 78%, 62%);
-    --clr-cyan: hsl(180, 62%, 55%);
-    --clr-orange: hsl(34, 97%, 64%);
-    --clr-blue: hsl(212, 86%, 64%);
+    --clr-moderate-violet: hsl(263, 55%, 52%);
+    --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-white: hsl(0, 0%, 100%);
   
     /* NEUTRAL COLORS */
-    --clr-very-dark-blue: hsl(234, 12%, 34%);
-    --clr-grayish-blue: hsl(229, 6%, 66%);
-    --clr-very-light-gray: hsl(0, 0%, 98%);
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
 
-    /* BOX SHADOW COLOR */
-    --box-clr: hsl(229, 6%, 80%);
+    /* TRANSLUCENT COLORS FOR TEXT */
+    --clr-trans-white-50: rgba(255, 255, 255, 0.5);
+    --clr-trans-white-70: rgba(255, 255, 255, 0.7);
+    --clr-trans-black-50: rgba(72, 85, 106, 0.5);
+    --clr-trans-black-70: rgba(72, 85, 106, 0.7);
   
     /* FONTS */
     --serif: serif;
-    --sans: Poppins, sans-serif;
+    --sans: Barlow Semi Condensed, sans-serif;
   
     /* FONT SIZING */
+    --fs-11: 0.688rem;
     --fs-12: 0.75rem;
     --fs-13: 0.813rem;
     --fs-14: 0.875rem;
@@ -34,12 +37,11 @@
     --fs-36: 2.25rem;
 
     /* FONT WEIGHT */
-    --fw-light: 200;
-    --fw-normal: 400;
-    --fw-med-bold: 600;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
   
     /* SET PRIMARY FONT */
-    font-family: Poppins, sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 16px;
 }
   
@@ -54,4 +56,69 @@ html {
 
 * {
     margin: 0;
+}
+
+/* UTILITY CLASSES */
+
+.verified-white {
+    font-size: var(--fs-11);
+    font-weight: var(--fw-medium);
+    color: var(--clr-trans-white-50);
+}
+
+.main-quote-white {
+    font-size: var(--fs-13);
+    font-weight: var(--fw-medium);
+    line-height: 18px;
+    color: var(--clr-trans-white-70);
+}
+
+.verified-black {
+    font-size: var(--fs-11);
+    font-weight: var(--fw-medium);
+    color: var(--clr-trans-black-50);
+}
+
+.main-quote-black {
+    font-size: var(--fs-13);
+    font-weight: var(--fw-medium);
+    line-height: 18px;
+    color: var(--clr-trans-black-70);
+}
+
+body {
+    background-color: var(--clr-light-grayish-blue);
+}
+
+section {
+    max-width: 327px;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+section img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    float: left;
+}
+
+.daniel {
+    background-color: var(--clr-moderate-violet);
+}
+
+.jonathan {
+    background-color: var(--clr-very-dark-grayish-blue);
+}
+
+.jeanette {
+
+}
+
+.patrick {
+    background-color: var(--clr-very-dark-blackish-blue);
+}
+
+.kira {
+
 }
