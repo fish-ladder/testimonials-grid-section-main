@@ -60,6 +60,14 @@ html {
 
 /* UTILITY CLASSES */
 
+.white-text {
+    color: var(--clr-white);
+}
+
+.dark-text {
+    color: var(--clr-very-dark-grayish-blue);
+}
+
 .verified-white {
     font-size: var(--fs-11);
     font-weight: var(--fw-medium);
@@ -88,6 +96,8 @@ html {
 
 body {
     background-color: var(--clr-light-grayish-blue);
+    display: grid;
+    place-content: center;
 }
 
 section {
@@ -101,6 +111,16 @@ section img {
     height: 28px;
     border-radius: 50%;
     float: left;
+}
+
+h1 {
+    font-size: var(--fs-13);
+    font-weight: var(--fw-medium);
+}
+
+h3 {
+    font-size: var(--fs-20);
+    font-weight: var(--fw-semi-bold);
 }
 
 .daniel {
