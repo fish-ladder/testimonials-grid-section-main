@@ -16,6 +16,10 @@
     --clr-trans-white-70: rgba(255, 255, 255, 0.7);
     --clr-trans-black-50: rgba(72, 85, 106, 0.5);
     --clr-trans-black-70: rgba(72, 85, 106, 0.7);
+
+    /* PROFILE PIC BORDER COLORS */
+    --clr-border-dark-violet: #733FC8;
+    --clr-border-light-violet: #A775F1;
   
     /* FONTS */
     --serif: serif;
@@ -61,20 +65,24 @@ html {
 /* UTILITY CLASSES */
 
 .white-text {
+    /* CONTENT STYLING */
     color: var(--clr-white);
 }
 
 .dark-text {
+    /* CONTENT STYLING */
     color: var(--clr-very-dark-grayish-blue);
 }
 
 .verified-white {
+    /* CONTENT STYLING */
     font-size: var(--fs-11);
     font-weight: var(--fw-medium);
     color: var(--clr-trans-white-50);
 }
 
 .main-quote-white {
+    /* CONTENT STYLING */
     font-size: var(--fs-13);
     font-weight: var(--fw-medium);
     line-height: 18px;
@@ -82,12 +90,14 @@ html {
 }
 
 .verified-black {
+    /* CONTENT STYLING */
     font-size: var(--fs-11);
     font-weight: var(--fw-medium);
     color: var(--clr-trans-black-50);
 }
 
 .main-quote-black {
+    /* CONTENT STYLING */
     font-size: var(--fs-13);
     font-weight: var(--fw-medium);
     line-height: 18px;
@@ -95,44 +105,90 @@ html {
 }
 
 body {
+    /* CONTENT STYLING */
     background-color: var(--clr-light-grayish-blue);
+
+    /* LAYOUT */
     display: grid;
     place-content: center;
 }
 
+.wrapper {
+    display: grid;
+    place-content: center;
+    gap: 1.45rem;
+    margin: 4.5rem 0;
+}
+
 section {
+    /* LAYOUT */
     max-width: 327px;
     border-radius: 8px;
-    padding: 32px;
+    padding: 26px 32px 32px 32px;
 }
 
 section img {
+
+    /* LAYOUT */
+    box-sizing: content-box;
     width: 28px;
     height: 28px;
     border-radius: 50%;
     float: left;
+    margin-right: 13px;
+}
+
+.daniel img {
+    border: 2px solid var(--clr-border-light-violet);
+}
+
+.patrick img,
+.jonathan img {
+    border: 2px solid var(--clr-border-dark-violet);
+}
+
+.jeanette img,
+.kira img {
+    border: 2px solid var(--clr-white);
 }
 
 h1 {
+    /* CONTENT STYLING */
     font-size: var(--fs-13);
     font-weight: var(--fw-medium);
 }
 
 h3 {
+    /* CONTENT STYLING */
     font-size: var(--fs-20);
     font-weight: var(--fw-semi-bold);
+
+    /* LAYOUT */
+    margin-top: 1.225rem;
+    margin-bottom: 1rem;
+}
+
+.daniel h3 {
+    margin-bottom: 2.5rem;
+}
+
+.daniel .main-quote {
+    /* LAYOUT */
+    padding-right: 0.875rem;
 }
 
 .daniel {
+    /* CONTENT STYLING */
     background-color: var(--clr-moderate-violet);
 }
 
 .jonathan {
+    /* CONTENT STYLING */
     background-color: var(--clr-very-dark-grayish-blue);
 }
 
 .jeanette {
-
+    background-color: var(--clr-white);
 }
 
 .patrick {
@@ -140,5 +196,18 @@ h3 {
 }
 
 .kira {
+    background-color: var(--clr-white);
+}
 
+
+
+/* ATTRIBUTION */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 0.5rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
