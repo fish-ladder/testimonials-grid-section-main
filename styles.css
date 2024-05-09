@@ -114,6 +114,7 @@ body {
 }
 
 .wrapper {
+    /* LAYOUT */
     display: grid;
     place-content: center;
     gap: 1.45rem;
@@ -128,7 +129,6 @@ section {
 }
 
 section img {
-
     /* LAYOUT */
     box-sizing: content-box;
     width: 28px;
@@ -139,16 +139,19 @@ section img {
 }
 
 .daniel img {
+    /* CONTENT STYLING */
     border: 2px solid var(--clr-border-light-violet);
 }
 
 .patrick img,
 .jonathan img {
+    /* CONTENT STYLING */
     border: 2px solid var(--clr-border-dark-violet);
 }
 
 .jeanette img,
 .kira img {
+    /* CONTENT STYLING */
     border: 2px solid var(--clr-white);
 }
 
@@ -169,6 +172,7 @@ h3 {
 }
 
 .daniel h3 {
+    /* LAYOUT */
     margin-bottom: 2.5rem;
 }
 
@@ -187,24 +191,24 @@ h3 {
     background-color: var(--clr-very-dark-grayish-blue);
 }
 
-.jeanette {
+.jeanette,
+.kira {
+    /* CONTENT STYLING */
     background-color: var(--clr-white);
 }
 
 .patrick {
+    /* CONTENT STYLING */
     background-color: var(--clr-very-dark-blackish-blue);
 }
-
-.kira {
-    background-color: var(--clr-white);
-}
-
 
 
 /* ATTRIBUTION */
 .attribution { 
+    /* CONTENT STYLING */
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    /* LAYOUT */
     margin-bottom: 0.5rem;
 }
 
