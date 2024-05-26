@@ -128,7 +128,21 @@ section {
     padding: 26px 32px 32px 32px;
 }
 
-section img {
+.daniel {
+    position: relative;
+    z-index: 1;
+}
+
+.quotation-mark-graphic {
+    width: 104px;
+    height: 102px;
+    position: absolute;
+    top: 0;
+    right: 24px;
+    z-index: -1;
+}
+
+.profile-pic {
     /* LAYOUT */
     box-sizing: content-box;
     width: 28px;
@@ -138,7 +152,7 @@ section img {
     margin-right: 13px;
 }
 
-.daniel img {
+.daniel .profile-pic {
     /* CONTENT STYLING */
     border: 2px solid var(--clr-border-light-violet);
 }
