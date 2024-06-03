@@ -116,26 +116,28 @@ body {
 .wrapper {
     /* LAYOUT */
     display: grid;
-    place-content: center;
     gap: 1.45rem;
     margin: 4.5rem 0;
 }
 
 section {
     /* LAYOUT */
-    max-width: 327px;
     border-radius: 8px;
     padding: 26px 32px 32px 32px;
 }
 
 .daniel {
+    /* LAYOUT */
     position: relative;
     z-index: 1;
 }
 
 .quotation-mark-graphic {
+    /* CONTENT STYLING */
     width: 104px;
     height: 102px;
+
+    /* LAYOUT */
     position: absolute;
     top: 0;
     right: 24px;
@@ -157,10 +159,14 @@ section {
     border: 2px solid var(--clr-border-light-violet);
 }
 
-.patrick img,
-.jonathan img {
+.patrick img {
     /* CONTENT STYLING */
     border: 2px solid var(--clr-border-dark-violet);
+}
+
+.jonathan img {
+    /* CONTENT STYLING */
+    border: 2px solid var(--clr-very-dark-grayish-blue);
 }
 
 .jeanette img,
@@ -183,11 +189,6 @@ h3 {
     /* LAYOUT */
     margin-top: 1.225rem;
     margin-bottom: 1rem;
-}
-
-.daniel h3 {
-    /* LAYOUT */
-    margin-bottom: 2.5rem;
 }
 
 .daniel .main-quote {
@@ -215,6 +216,57 @@ h3 {
     /* CONTENT STYLING */
     background-color: var(--clr-very-dark-blackish-blue);
 }
+ 
+/* MEDIA QUERIES FOR RESPONSIVENESS*/
+
+@media (max-width: 1199px) {
+
+    section {
+        /* LAYOUT */
+        max-width: 327px;
+    }
+
+    .daniel h3 {
+        /* LAYOUT */
+        margin-bottom: 2.5rem;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .wrapper {
+        /* LAYOUT */
+        grid-template-columns: repeat(4, 255px);
+        row-gap: 1.45rem;
+        column-gap: 1.85rem;
+    }
+
+    .quotation-mark-graphic {
+        /* LAYOUT */
+        right: 80px;
+    }
+
+    .daniel {
+        /* LAYOUT */
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .kira {
+        /* LAYOUT */
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .patrick {
+        /* LAYOUT */
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+}
+
 
 
 /* ATTRIBUTION */
