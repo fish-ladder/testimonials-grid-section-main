@@ -237,6 +237,7 @@ h3 {
 
     .wrapper {
         /* LAYOUT */
+        margin: 10.25rem 0;
         grid-template-columns: repeat(4, 255px);
         row-gap: 1.45rem;
         column-gap: 1.85rem;
