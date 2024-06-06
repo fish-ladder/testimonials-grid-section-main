@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://github.com/fish-ladder/four-card-feature-section-master/edit/main/README.md)
+- Solution URL: [Github Repo](https://github.com/fish-ladder/testimonials-grid-section-main)
 - Live Site URL: [Live Site](https://fish-ladder.github.io/testimonials-grid-section-main/)
 
 ## My process
